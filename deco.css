@@ -14,6 +14,16 @@ body {
 	color: #cc3399;
 	border: 3px solid #fff;
 }
+nav {
+    position: fixed;
+    top: 0;
+	height: 100px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #ddd;
+}
 nav a{
 	color: #fff;
 	text-decoration:none;
