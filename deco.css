@@ -14,3 +14,15 @@ body {
 	color: #cc3399;
 	border: 3px solid #fff;
 }
+nav a{
+	color: #fff;
+	text-decoration:none;
+	background-color : #004080;
+	border: 3px solid #fff;
+	padding: 15px;
+	border-radius: 15px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	float: right;
+}
