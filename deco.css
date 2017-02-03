@@ -9,3 +9,8 @@ body {
 	height: 100%;
 	border-top: 2px solid black;
 }
+.cur{
+	font-weight: bold;
+	color: #cc3399;
+	border: 3px solid #fff;
+}
