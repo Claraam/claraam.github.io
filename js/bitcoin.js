@@ -31,9 +31,9 @@ $(document).ready(function() {
 			$('#bitcoin_blockchain_number').append(data.blocks);
 		},
 		
-		success : function(data) {
+		/*success : function(data) {
 			$('#bitcoin_blockchain_chain').append(data.chain);
-		},
+		},*/
 
 		error : function(xhr, status, err) {
 			$('#bitcoin_blockchain_number').append(err+" N/A");
