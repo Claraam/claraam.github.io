@@ -28,6 +28,10 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
+			$('#bitcoin_blockchain_number').append(data.blocks);
+		},
+		
+		success : function(data) {
 			$('#bitcoin_blockchain_number').append(data.chain);
 		},
 
