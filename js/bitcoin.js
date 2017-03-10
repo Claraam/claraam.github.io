@@ -32,7 +32,7 @@ $(document).ready(function() {
 		},
 		
 		success : function(data) {
-			$('#bitcoin_blockchain_number').append(data.chain);
+			$('#bitcoin_blockchain_chain').append(data.chain);
 		},
 
 		error : function(xhr, status, err) {
