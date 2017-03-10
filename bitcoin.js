@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}
 	});
 
-	});
+});
 	
 $(document).ready(function() {
 	
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#bitcoin_mininginfo').append(data.height);
+			$('#bitcoin_mininginfo').append(data.chain);
 		},
 
 		error : function(xhr, status, err) {
