@@ -9,30 +9,5 @@ body {
 	height: 100%;
 	border-top: 2px solid black;
 }
-.cur{
-	font-weight: bold;
-	color: #cc3399;
-	border: 3px solid #fff;
-}
-nav {
-    position: fixed;
-    top: 0;
-	height: 100px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	color: #ddd;
-}
-nav a{
-	color: #fff;
-	text-decoration:none;
-	background-color : #004080;
-	border: 3px solid #fff;
-	padding: 60px;
-	border-radius: 15px;
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-right: 15px;
-	float: right;
-}
+
+
