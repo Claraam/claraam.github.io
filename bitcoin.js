@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 });
 	
-$(document).ready(function() {
+/*$(document).ready(function() {
 	
 	$.ajax({
 		url : "http://bitcoin.mubiz.com/mininginfo",
@@ -36,6 +36,6 @@ $(document).ready(function() {
 			$('#bitcoin_mininginfo').append(err+" N/A");
 		}
 	});
-});
+});*/
 
 
