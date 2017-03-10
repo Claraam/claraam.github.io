@@ -17,4 +17,23 @@ $(document).ready(function() {
 	});
 
 });
+
+$(document).ready(function() {
+	$.ajax({
+		url : "http://bitcoin.mubiz.com/blockchaininfo",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
+
+		success : function(data) {
+			$('#bitcoin_blockchain_number').append(data.chain);
+		},
+
+		error : function(xhr, status, err) {
+			$('#bitcoin_blockchain_number').append(err+" N/A");
+		}
+	});
+});
 	
