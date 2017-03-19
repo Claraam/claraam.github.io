@@ -1,29 +1,76 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.modal-content{
+	text-align:center;
+}
+.modal-content{
+	border-radius:8px;
+}
+.modal-header, #se_connecter, .navbar{
+	background-color:#0F9DE8;
+	border-color:#0F9DE8;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 10px;
+}
+/*Couleur noire pour les liens*/
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+	color:black;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color:#A9EAFE;
+	color:#0F9DE8;
+	border-radius:8px;
+	font-size: 120%;
 }
 
-li {
+/*Ecriture caroussel*/
+.carousel-caption{
+	color:black;
+}
+.carousel-inner img {
+      width: 100%; /*Fixe le width à 100%*/
+      margin: auto;
+      min-height:200px;
+}
+/*Cache les texte du caroussel when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
+
+h1{
+	color:#0F9DE8;
+	text-align:center;
+	font-weight:bold;
+}
+h3 {
+    font-size: 24px;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h5 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+} 
+
+.panel-default>.panel-heading{
+	background-color:#4682B4;
+	color:white;
+}
+
+#logo_esilv{
+	height:30px;
+	width:30px;
+    margin-left: auto;
+    margin-right: auto;
     float: left;
-    border-right:1px solid #bbb;
 }
-
-li:last-child {
-    border-right: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-.active {
-    background-color: #4CAF50;
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
 }
