@@ -28,7 +28,7 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#bitcoin_blockchain_number').append(data.blocks);
+			 $('#bitcoin_blockchain_number').append(data.blocks);
 		},
 
 		error : function(xhr, status, err) {
