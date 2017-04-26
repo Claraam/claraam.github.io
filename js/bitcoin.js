@@ -56,5 +56,24 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+	$.ajax({
+		url : "",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
+
+		success : function(data) {
+			$('#bitcoin_difficulty').append(data.chain);
+		},
+
+		error : function(xhr, status, err) {
+			$('#bitcoin_difficulty').append(err+" N/A");
+		}
+	});
+});
+
 
 
