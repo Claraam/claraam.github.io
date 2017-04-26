@@ -1,18 +1,18 @@
 $(document).ready(function() {
 	$.ajax({
-		url : "http://bitcoin.mubiz.com/info",
+		url : "https://api.blockchain.info/stats?cors=true",
 		dataType : "json",
-		contentType : "application/json; charset=utf-8",
+		//contentType : "application/json; charset=utf-8",
 		type : "GET",
 		timeout:	"5000",
 		async : false,
 
 		success : function(data) {
-			$('#bitcoin_block_number').append(data.blocks);
+			$('#bitcoin_block_total').append(data.n_blocks_total);
 		},
 
 		error : function(xhr, status, err) {
-			$('#bitcoin_block_number').append(err+" N/A");
+			$('#bitcoin_block_total').append(err+" N/A");
 		}
 	});
 
@@ -20,53 +20,53 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$.ajax({
-		url : "http://bitcoin.mubiz.com/blockchaininfo",
+		url : "https://api.blockchain.info/stats?cors=true",
 		dataType : "json",
-		contentType : "application/json; charset=utf-8",
+		//contentType : "application/json; charset=utf-8",
 		type : "GET",
 		timeout:	"5000",
 		async : false,
 
 		success : function(data) {
-			 $('#bitcoin_blockchain_number').append(data.blocks);
+			 $('#bitcoin_market_price').append(data.market_price_usd);
 		},
 
 		error : function(xhr, status, err) {
-			$('#bitcoin_blockchain_number').append(err+" N/A");
+			$('#bitcoin_market_price').append(err+" N/A");
 		}
 	});
 });
 
 $(document).ready(function() {
 	$.ajax({
-		url : "http://bitcoin.mubiz.com/mininginfo",
+		url : "https://api.blockchain.info/stats?cors=true",
 		dataType : "json",
-		contentType : "application/json; charset=utf-8",
+		//contentType : "application/json; charset=utf-8",
 		type : "GET",
 		timeout:	"5000",
 		async : false,
 
 		success : function(data) {
-			$('#bitcoin_mininginfo').append(data.chain);
+			$('#bitcoin_hash_rate').append(data.hash_rate);
 		},
 
 		error : function(xhr, status, err) {
-			$('#bitcoin_mininginfo').append(err+" N/A");
+			$('#bitcoin_hash_rate').append(err+" N/A");
 		}
 	});
 });
 
 $(document).ready(function() {
 	$.ajax({
-		url : "",
+		url : "https://api.blockchain.info/stats?cors=true",
 		dataType : "json",
-		contentType : "application/json; charset=utf-8",
+		//contentType : "application/json; charset=utf-8",
 		type : "GET",
 		timeout:	"5000",
 		async : false,
 
 		success : function(data) {
-			$('#bitcoin_difficulty').append(data.chain);
+			$('#bitcoin_difficulty').append(data.difficulty);
 		},
 
 		error : function(xhr, status, err) {
