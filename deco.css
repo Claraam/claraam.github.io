@@ -31,7 +31,7 @@
 .carousel-inner img {
       width: 100%; /*Fixe le width à 100%*/
       margin: auto;
-      min-height:150px;
+      min-height:200px;
 }
 /*Cache les texte du caroussel when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
